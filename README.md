@@ -16,8 +16,20 @@ Almacenamiento en un archivo JSON con todos los datos históricos.
 
 Conversión a formato CSV mediante pandas para facilitar el análisis posterior.
 
+
 ⚠️ Nota importante:
 Los datos del mes de junio de 2025 aún no están disponibles en su totalidad en la API de la AEMET.
 Por tanto, este año no se ha incluido en el archivo histórico.
 Si se desea usar los datos parciales disponibles de 2025, se deben descargar manualmente con el script correspondiente (junio_actual.py) y unirlos al archivo principal de forma independiente.
+
+
+ORDEN DE EJECUCION DE LOS ARCHIVOS:
+
+- datos_junio_ultimos 50 años
+- datos_junio_actual (caso de usarse)
+- convertidor_df
+- scater_plot
+- grafica lineas maxima
+- grafica lineas minima
+
 
