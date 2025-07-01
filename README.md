@@ -1,7 +1,7 @@
-Proyecto: Análisis climático de Sevilla en el mes de junio (API AEMET)
+# Proyecto: Análisis climático de Sevilla en el mes de junio (API AEMET)
 Este proyecto utiliza la API de la AEMET para recopilar y analizar datos climáticos diarios del mes de junio en la estación "SEVILLA AEROPUERTO" (idema: 5783) a lo largo de los últimos 50 años.
 
-🔹 Funcionalidad actual
+## 🔹 Funcionalidad actual
 Obtención automática de los datos climáticos diarios de junio desde 1975 hasta 2024.
 
 Extracción de:
@@ -24,12 +24,12 @@ Gráfico de líneas para la temperatura máxima, mostrando la media diaria hasta
 
 Gráfico de líneas para la temperatura mínima, con la misma lógica que el gráfico de máxima, usando colores y bandas específicas para las temperaturas mínimas.
 
-⚠️ Nota importante
+## ⚠️ Nota importante
 Los datos del mes de junio de 2025 aún no están disponibles en su totalidad en la API de la AEMET.
 Por tanto, este año no se ha incluido en el archivo histórico.
 Si se desean usar los datos parciales disponibles de 2025, se deben descargar manualmente con el script correspondiente (junio_actual.py) y unirlos al archivo principal de forma independiente.
 
-🔐 Configuración del token de acceso
+## 🔐 Configuración del token de acceso
 Para poder acceder a la API de la AEMET es necesario disponer de un token válido.
 
 Este token debe guardarse en un archivo .env con la siguiente variable de entorno:
@@ -52,7 +52,7 @@ from dotenv import load_dotenv
 load_dotenv("C:/ruta/a/tu/archivo/tokens.env")
 Asegúrate de que esa ruta corresponda a donde realmente está tu archivo .env.
 
-📂 Orden de ejecución de los archivos
+## 📂 Orden de ejecución de los archivos
 datos_junio_ultimos_50_anos.py
 
 datos_junio_actual.py (opcional, para datos parciales de 2025)
