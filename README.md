@@ -26,8 +26,12 @@ Gráfico de líneas para la temperatura máxima, mostrando la media diaria hasta
 
 Gráfico de líneas para la temperatura mínima, con la misma lógica que el gráfico de máxima, usando colores y bandas específicas para las temperaturas mínimas.
 
-## ⚠️ Nota importante
-Los datos del mes de junio de 2025 aún no están disponibles en su totalidad en la API de la AEMET.
+## ⚠️ Notas importantes
+
+1 Nuestros archivos se ejecutaron desde la carpeta C:\espaciopython\CODIGOS UTILES\GRAFICA_AEMET
+Es posible, sobre todo con los codigos subidos mas recientemente y menos pulidos que si se instalan en otra carpeta haya algun problema.
+
+2 Los datos del mes de junio de 2025 aún no están disponibles en su totalidad en la API de la AEMET.
 Por tanto, este año no se ha incluido en el archivo histórico.
 Si se desean usar los datos parciales disponibles de 2025, se deben descargar manualmente con el script correspondiente (junio_actual.py) y unirlos al archivo principal de forma independiente.
 
@@ -71,8 +75,14 @@ grafica_lineas_minima.py
 
 
 # ACTUALIZACION:
-Se ha añadido un archivo (Graficador temp) que permite tomar los datos del mes deseado en la estacion meteorologica deseada y hace todas las funciones descritas arriba y permite usarlas como funciones si ya se tienen los datos..
+Se ha añadido un archivo (Graficador temp) que permite tomar los datos del mes deseado en la estacion meteorologica deseada y hace todas las funciones descritas arriba y permite usarlas como funciones si ya se tienen los datos.
 
-Este archivo toma automaticamente los datos del año actual.  
+Este archivo toma automaticamente los datos del año actual si estan disponibles.
+
+Ademas, creara una nueva carpeta para almacenar los datos del mes y estacion seleccionados.
+
+Recomendamos tener cuidado con las rutas: nuestro archivo estaba en C:\espaciopython\CODIGOS UTILES\GRAFICA_AEMET y se ejecuto desde ahi. 
+
+
 
 
