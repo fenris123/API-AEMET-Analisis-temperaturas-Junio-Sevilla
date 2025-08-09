@@ -1,5 +1,7 @@
-# Proyecto: Análisis climático de Sevilla en el mes de junio (API AEMET)
+# Proyecto: Análisis climático usando la web de AEMET (API AEMET)
 Este proyecto utiliza la API de la AEMET para recopilar y analizar datos climáticos diarios del mes de junio en la estación "SEVILLA AEROPUERTO" (idema: 5783) a lo largo de los últimos 50 años.
+
+(Vease la actualizacion en la parte final de este texto  si se desean estudiar datos de otros meses y estaciones).
 
 ## 🔹 Funcionalidad actual
 Obtención automática de los datos climáticos diarios de junio desde 1975 hasta 2024.
@@ -28,6 +30,8 @@ Gráfico de líneas para la temperatura mínima, con la misma lógica que el gr�
 Los datos del mes de junio de 2025 aún no están disponibles en su totalidad en la API de la AEMET.
 Por tanto, este año no se ha incluido en el archivo histórico.
 Si se desean usar los datos parciales disponibles de 2025, se deben descargar manualmente con el script correspondiente (junio_actual.py) y unirlos al archivo principal de forma independiente.
+
+(vease actualizacion, mas abajo.)
 
 ## 🔐 Configuración del token de acceso
 Para poder acceder a la API de la AEMET es necesario disponer de un token válido.
@@ -66,5 +70,9 @@ grafica_lineas_maxima.py
 grafica_lineas_minima.py
 
 
+# ACTUALIZACION:
+Se ha añadido un archivo (Graficador temp) que permite tomar los datos del mes deseado en la estacion meteorologica deseada y hace todas las funciones descritas arriba y permite usarlas como funciones si ya se tienen los datos..
+
+Este archivo toma automaticamente los datos del año actual.  
 
 
