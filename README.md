@@ -9,13 +9,15 @@ Este proyecto utiliza la API de la AEMET para recopilar y analizar datos climát
 Este proyecto puede ejecutarse como un único script sin necesidad de ejecutar pasos intermedios ni instalar dependencias complejas adicionales.
 
 ## Cómo usarlo
+
 Clona o descarga el repositorio
 Instala las dependencias mínimas necesarias:
-pip install requests pandas matplotlib python-dotenv
-Crea un archivo .env en la carpeta del proyecto con tu token de la API de AEMET:
-TOKEN_AEMET=tu_token_aqui
-Ejecuta el script principal:
-python script_principal.py
+  pip install requests pandas matplotlib python-dotenv
+
+
+Ejecuta el script completo:
+python script_completo.py
+
 Introduce los parámetros por consola:
   Mes (1–12)
   Estación meteorológica (ENTER usa por defecto 5783 – Sevilla Aeropuerto)
@@ -37,7 +39,7 @@ No requiere archivos intermedios ni preparación previa de datos
   Python 3.8+
   Conexión a internet
   Token válido de la API de AEMET
-  Las librerias que puedes ver en el script
+  Las librerias citadas arriba
 
 ## Configuración del token
 
