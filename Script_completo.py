@@ -14,8 +14,8 @@ from dotenv import load_dotenv
 # =========================
 # CONFIG TOKEN
 # =========================
-load_dotenv("X:/espaciopython/enviroments/tokens.env")
-TOKEN = os.getenv("TOKEN_AEMET")
+
+TOKEN_AEMET= tu_token_aqui
 
 headers = {
     "accept": "application/json",
